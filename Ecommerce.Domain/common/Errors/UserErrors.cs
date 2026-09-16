@@ -12,4 +12,14 @@ public static class UserErrors
         "User.InvalidCredentials",
         "Invalid email or password.",
         ErrorType.Unauthorized);
+
+    public static readonly Error EmailAlreadyExists = new(
+        "User.EmailAlreadyExists",
+        "An account with this email already exists.",
+        ErrorType.Conflict);
+
+    public static Error RegistrationFailed(string description) => new(
+        "User.RegistrationFailed",
+        description,
+        ErrorType.Validation);
 }

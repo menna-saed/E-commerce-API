@@ -1,4 +1,4 @@
-﻿namespace Ecommerce.Domain.Entities;
+﻿namespace Ecommerce.Domain.Entities.Prodcut;
 
 public abstract class BaseEntity
 {

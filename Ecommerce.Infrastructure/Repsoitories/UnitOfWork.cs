@@ -1,5 +1,5 @@
 ﻿using Ecommerce.Domain.Repository;
-using Ecommerce.Infrastructure.Configration.DBcontext;
+using Ecommerce.Infrastructure.DBcontext;
 
 namespace Ecommerce.Interface.Repsoitories;
 

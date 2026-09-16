@@ -1,7 +1,7 @@
 ﻿using Ecommerce.Application.Brands.Dtos;
 using Ecommerce.Domain.Specifications.Brands;
-using Ecommerce.Infrastructure.Configration.DBcontext;
-using Ecommerce.Interface.Presistence.Specifications;
+using Ecommerce.Infrastructure.DBcontext;
+using Ecommerce.Infrastructure.Persistence.Specifications;
 using Mapster;
 using Microsoft.EntityFrameworkCore;
 

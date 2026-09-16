@@ -1,12 +1,12 @@
 using Ecommerce.API;
 using Ecommerce.API.EndPoints;
 using Ecommerce.Application;
-using Ecommerce.Infrastructure.Configration.DBcontext;
 using Ecommerce.Interface.Seeding;
 using Microsoft.AspNetCore.RateLimiting;
 using System.Threading.RateLimiting;
 using Asp.Versioning;
 using Asp.Versioning.Conventions;
+using Ecommerce.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -80,9 +80,13 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseAuthentication();
+app.UseAuthorization();
 
 // Endpoints
 app.MapCatalogEndpoints();
+app.MapBasketEndpoints();
+app.MapIdentityEndpoints();
 
 app.MapHealthChecks("/health");
 

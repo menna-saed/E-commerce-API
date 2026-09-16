@@ -1,8 +1,9 @@
 ﻿using Ecommerce.Domain.Entities;
+using Ecommerce.Domain.Entities.Prodcut;
 using Ecommerce.Domain.Repository;
 using Ecommerce.Domain.Specifications;
-using Ecommerce.Infrastructure.Configration.DBcontext;
-using Ecommerce.Interface.Presistence.Specifications;
+using Ecommerce.Infrastructure.DBcontext;
+using Ecommerce.Infrastructure.Persistence.Specifications;
 using Microsoft.EntityFrameworkCore;
 
 namespace Ecommerce.Interface.Repsoitories;

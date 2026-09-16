@@ -5,7 +5,7 @@ using MediatR;
 
 namespace Ecommerce.Application.Products.Queries;
 
-public sealed record GetAllProductsQuery (ProductQueryParameters Parameter) :
+public sealed record GetAllProductsQuery (ProductQueryParameters    Parameter) :
     IRequest<Result<IReadOnlyList<ProductDto>>>
 {
     

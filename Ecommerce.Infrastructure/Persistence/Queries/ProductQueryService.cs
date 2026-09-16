@@ -1,22 +1,23 @@
 ﻿using Ecommerce.Application.Products.Dtos;
 using Ecommerce.Domain.common;
 using Ecommerce.Domain.Specifications.Products;
-using Ecommerce.Infrastructure.Configration.DBcontext;
-using Ecommerce.Interface.Presistence.Specifications;
+using Ecommerce.Infrastructure.DBcontext;
+using Ecommerce.Infrastructure.Persistence.Specifications;
 using Mapster;
 using Microsoft.EntityFrameworkCore;
 
-namespace Ecommerce.Interface.Presistence.Queries;
+namespace Ecommerce.Infrastructure.Persistence.Queries;
 
-public sealed class ProductQueryService(AppDBcontext context) : IProdcutQueryService
+public sealed class ProductQueryService(AppDBcontext context) : IProdcutQueryService      
 {
     public async Task<IReadOnlyList<ProductDto>> GetAllAsync(ProductQueryParameters parameters, CancellationToken ct = default)
     { 
-        var specification = new ActiveProductsSpecification(parameters);
+        var specification = new ActiveProductsSpecification (parameters);
 
         return await context.Products
             .AsNoTracking()
-            .ApplySpecification(specification)
+    
+            .ApplySpecification (specification)
             .ProjectToType<ProductDto>()
             .ToListAsync(ct);
     }

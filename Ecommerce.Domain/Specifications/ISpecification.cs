@@ -1,5 +1,6 @@
 using System.Linq.Expressions;
 using Ecommerce.Domain.Entities;
+using Ecommerce.Domain.Entities.Prodcut;
 
 namespace Ecommerce.Domain.Specifications;
 

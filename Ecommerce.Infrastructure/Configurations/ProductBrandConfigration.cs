@@ -1,6 +1,8 @@
 ﻿using Ecommerce.Domain.Entities;
+using Ecommerce.Infrastructure.Configurations;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Microsoft.IdentityModel.Tokens;
 
 namespace Ecommerce.Domain.Configration;
 
@@ -10,6 +12,8 @@ public class ProductBrandConfiguration : IEntityTypeConfiguration<ProductBrand>
     {
         builder.ToTable("ProductBrands");
 
+        BaseEntityConfigration.Configure(builder);
+        
         builder.HasKey(pb => pb.Id);
 
         builder.Property(pb => pb.Name)

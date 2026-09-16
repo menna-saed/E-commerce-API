@@ -12,7 +12,7 @@ public sealed class GetAllProductsQueryHandler(IProdcutQueryService productQuery
 {
     public async Task<Result<IReadOnlyList<ProductDto>>> Handle(GetAllProductsQuery request, CancellationToken cancellationToken)
     {
-        var products = await productQueryService.GetAllAsync(
+        var products = await productQueryService   .GetAllAsync          (
             request.Parameter,
             cancellationToken);
 

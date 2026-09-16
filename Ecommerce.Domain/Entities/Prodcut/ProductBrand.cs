@@ -1,5 +1,6 @@
 ﻿using Ecommerce.Domain.common;
 using Ecommerce.Domain.Common;
+using Ecommerce.Domain.Entities.Prodcut;
 
 namespace Ecommerce.Domain.Entities;
 

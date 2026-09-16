@@ -11,7 +11,7 @@ public sealed class GetProductByIdQueryHandler(IProdcutQueryService productQuery
 {
     public async Task<Result<ProductDto>> Handle(GetProductByIdQuery request, CancellationToken cancellationToken)
     {
-        var product = await productQueryService.GetById(request.Id, cancellationToken);
+        var product = await productQueryService.GetById (request.Id, cancellationToken);
         return product is null
             ? Result<ProductDto>.Failure(ProductErrors.NotFound)
             : Result<ProductDto>.Success(product);

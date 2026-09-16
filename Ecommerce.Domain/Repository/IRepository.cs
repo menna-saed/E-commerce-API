@@ -1,4 +1,5 @@
 ﻿using Ecommerce.Domain.Entities;
+using Ecommerce.Domain.Entities.Prodcut;
 using Ecommerce.Domain.Specifications;
 
 namespace Ecommerce.Domain.Repository;

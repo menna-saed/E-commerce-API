@@ -2,6 +2,6 @@
 
 public interface IProductBrandQueryService
 {
-    Task<IReadOnlyList<BrandDto>> GetAllAsync(CancellationToken cancellationToken = default);
+    Task<IReadOnlyList<BrandDto>> GetAllAsync (CancellationToken cancellationToken = default);
 
 }

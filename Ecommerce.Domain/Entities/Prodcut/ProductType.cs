@@ -1,4 +1,6 @@
-﻿namespace Ecommerce.Domain.Entities;
+﻿using Ecommerce.Domain.Entities.Prodcut;
+
+namespace Ecommerce.Domain.Entities;
 
 public class ProductType :BaseEntity
 {

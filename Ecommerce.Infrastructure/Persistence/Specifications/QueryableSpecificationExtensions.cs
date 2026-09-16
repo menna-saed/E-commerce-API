@@ -1,7 +1,7 @@
-using Ecommerce.Domain.Entities;
+using Ecommerce.Domain.Entities.Prodcut;
 using Ecommerce.Domain.Specifications;
 
-namespace Ecommerce.Interface.Presistence.Specifications;
+namespace Ecommerce.Infrastructure.Persistence.Specifications;
 
 public static class QueryableSpecificationExtensions
 {
@@ -10,5 +10,5 @@ public static class QueryableSpecificationExtensions
        
         ISpecification<T> specification)
         where T : BaseEntity
-        => SpecificationEvaluator.Apply(query, specification);
+        => SpecificationEvaluator .Apply(query, specification);
 }

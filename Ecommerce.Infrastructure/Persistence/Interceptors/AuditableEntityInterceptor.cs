@@ -1,4 +1,5 @@
 ﻿using Ecommerce.Domain.Entities;
+using Ecommerce.Domain.Entities.Prodcut;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 

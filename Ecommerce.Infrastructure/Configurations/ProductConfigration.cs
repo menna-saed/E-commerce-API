@@ -2,14 +2,14 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Ecommerce.Interface.Configration;
+namespace Ecommerce.Infrastructure.Configurations;
 
 public class ProductConfiguration : IEntityTypeConfiguration<Product>
 {
     public void Configure(EntityTypeBuilder<Product> builder)
     {
         builder.ToTable("Products");
-
+        BaseEntityConfigration.Configure(builder);
         builder.HasKey(p => p.Id);
 
         builder.Property(p => p.Name)

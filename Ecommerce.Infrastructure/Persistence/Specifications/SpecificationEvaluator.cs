@@ -1,8 +1,8 @@
-using Ecommerce.Domain.Entities;
+using Ecommerce.Domain.Entities.Prodcut;
 using Ecommerce.Domain.Specifications;
 using Microsoft.EntityFrameworkCore;
 
-namespace Ecommerce.Interface.Presistence.Specifications;
+namespace Ecommerce.Infrastructure.Persistence.Specifications;
 
 public static class SpecificationEvaluator
 {

@@ -1,6 +1,6 @@
 ﻿using Ecommerce.Domain.Entities;
 
-namespace Ecommerce.Interface.Seeding;
+namespace Ecommerce.Infrastructure.Seeding;
 
 public static class ProductBrandSeed
 {

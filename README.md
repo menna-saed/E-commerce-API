@@ -103,14 +103,11 @@ Each layer only depends on the ones inside it — the Domain layer doesn't know 
 ---
 
 ## Project Status
-
-Currently working on:
-
-- [ ] Redis Caching
-
+Completed:
+   Redis Caching
+   Authentication & Authorization (JWT)
+   
 Planned next:
-
-- [ ] Authentication & Authorization (JWT)
 - [ ] Unit & Integration Tests
 - [ ] Docker support
 - [ ] CI/CD pipeline
